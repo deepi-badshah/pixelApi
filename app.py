@@ -5,7 +5,7 @@ import pytesseract
 import os
 
 app = Flask(__name__)
-pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'  # your path may be different
+# pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'  # your path may be different
 
 @app.route('/process_pdf', methods=['POST'])
 def process_pdf():
